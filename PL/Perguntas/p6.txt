@@ -1,0 +1,26 @@
+d = CALL FpotenciaF(;);
+
+STDOUT("RETORNOU");
+STDOUT(d);
+
+
+DEFINE FpotenciaF(){
+    
+    INT i = 0;
+    
+    INT r = 1;
+    
+    INT b = STDIN();
+
+    INT e = STDIN();
+
+    IF(e == 0){
+        RETURN 1;
+    }
+
+    FOR i  (i < e) i=i+1;{
+        r = r*b;
+    }
+
+    RETURN r;
+}
